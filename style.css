@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.Heading{
+    font-weight:700;
+    margin-top: 10px;
+    color: #7e4b8b;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* 
+#ae9da9 
+#aaaaaa
+*/
+body{
+    background-color: #fbf1f9;
+}
+
+.box{
+    border:#7e4b8b 2px solid;
+    height: 90px;
+}
+
+.box1{
+    border:#7e4b8b 2px solid;
+    height: 90px;
+    border-left: none;
+    border-right: none;
+
+}
+
+.box2{
+    border:#7e4b8b 2px solid;
+    height: 90px;
+    border-left: none;
+    border-right: none;
+}
+
+.tickhover:is(:focus,:active,:hover){
+    background-color: #ae9da9;   
+}
+
+.tickhover{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+.tickhover label{
+    color: #7e4b8b;
+    font-size: 0px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 1s;
+}
+
+
+
+.WinBar{
+    background-color: #7e4b8b;
+    border-radius: 5px;
+    /* height: 20px;
+    width: 50px; */
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+    transition: width 1s,height 1s;
+    transform: rotate(30px);
+}
+
+.reset{
+    background-color: #ffffff;
+    color: #7e4b8b;
+    width: 100px;
+    margin-top: 5rem;
+    font-weight: 700;
+    border:2px solid #7e4b8b;
+    box-shadow: 5px 5px 1px #7e4b8b;
+}
+.reset:is(:focus,:active,:hover){
+    background-color: #7e4b8b;
+    color: #ffffff;
+    width: 100px;
+    margin-top: 5rem;
+}
+.reset:focus{
+    box-shadow: none;
+}
